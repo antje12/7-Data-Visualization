@@ -18,6 +18,7 @@ plot(samples)
 
 #Practice6
 help(sqrt)
+?sqrt
 
 #Practice7
 samples = rnorm(100)
