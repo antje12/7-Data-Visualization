@@ -81,20 +81,16 @@ pkgs <- c("ggplot2", "dplyr", "tidyr",
           "ggbeeswarm")
 install.packages(pkgs)
 
+library(readr)
 library(readxl)
 
-d1 = read.csv(
-  file="SalariesDataset/Salaries.csv",
-  header=TRUE)
+d1 = read_csv("SalariesDataset/Salaries.csv")
 
 #Practice13
-d2 = read.table(
-  file="SalariesDataset/Salaries.txt",
-  header=TRUE)
+d2 = read_tsv("SalariesDataset/Salaries.txt")
 
 #Practice14
-d3 = read_excel(
-  "SalariesDataset/Salaries.xlsx")
+d3 = read_excel("SalariesDataset/Salaries.xlsx")
 
 summary(d1)
 
