@@ -96,6 +96,8 @@ d2 = read.table(
 d3 = read_excel(
   "SalariesDataset/Salaries.xlsx")
 
+summary(d1)
+
 #Practice15
 library(dplyr)
 
