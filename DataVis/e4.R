@@ -49,9 +49,10 @@ lines(t$b, type="s", lwd=2,
 points(t$c, pch=20, cex=4,
        col=rgb(0,0,1,0.3))
 
+#t$a = column "A" of dataframe "T"
 #rgb = color (red, green, blue, alpha) (transparency)
-#lwd = The line width, a positive number, defaulting to 1.
-#pch = Either an integer specifying a symbol or a single character to be used as the default in plotting points.
+#lwd = The line width, a positive number, defaulting to 1
+#pch = Either an integer specifying a symbol or a single character to be used as the default in plotting points
 #cex = A numerical value giving the amount by which plotting text and symbols should be magnified relative to the default
 
 #Practice11
