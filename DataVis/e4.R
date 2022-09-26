@@ -94,6 +94,9 @@ d3 = read_excel("SalariesDataset/Salaries.xlsx")
 
 summary(d1)
 
+#Guide
+# https://rkabacoff.github.io/datavis/DataPrep.html
+
 #Practice 15
 library(dplyr)
 
