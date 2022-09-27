@@ -169,7 +169,6 @@ temp = starwars %>%
             mean_mass = mean(mass, na.rm=TRUE))
 
 #Practice 27
-
 temp = starwars %>%
   filter(sex == "female") %>%
   group_by(species) %>%
