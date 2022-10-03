@@ -28,7 +28,7 @@ ggplot(asia) +
 ########Density Plots & Boxplots
 # plot the distribution of salaries 
 # by rank using kernel density plots
-Salaries<-read_excel("SalariesDataset/Salaries.xlsx")
+Salaries<-read_excel("e4/SalariesDataset/Salaries.xlsx")
 
 ggplot(Salaries, 
        aes(x = salary, 
