@@ -7,16 +7,17 @@ dat <- dat %>% select(c("countryName","eprtrSectorName","facilityName","Longitud
 
 samp <- sample_n(dat, 50)
 
-summarize(samp %>% group_by(eprtrSectorName),
-          mean = mean(emissions, na.rm=TRUE))
-
 plot(samp$reportingYear, dat$emissions, main = "Emissions each year",
      xlab = "Emission Year", ylab = "Kg of pollutant",
      pch = 19)
 
-ggplot(dat, aes(
+grouped <- group_by(dat, eprtrSectorName, reportingYear)
+meaned <- summarize(grouped, 
+          mean_emissions = mean(emissions, na.rm=TRUE))
+
+ggplot(meaned, aes(
   x = reportingYear,
-  y = emissions,
+  y = mean_emissions,
   color=eprtrSectorName)) +
   geom_point() +
   geom_line()
